@@ -258,4 +258,11 @@ footer {
     width: auto;
     height: auto;
   }
+
+  #meus-projetos{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    
+    {
 }
