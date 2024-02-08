@@ -10,32 +10,29 @@
 body {
   width: 100vw;
   overflow-x: hidden;
-  background-color: #ccc;
+  background-color: #81689D;
 }
 
 #navbar {
-  background-color: #F1F1F1;
+  background-color: #1F2544;
   width: 100vw;
   height: 10vh;
   border-bottom: 2px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 #navbar h1 {
   font-size: 40px;
   margin: 5px;
+  color: #81689D;
 }
 
 .card {
   width:  20vw;
-  height: auto;
-  background: #171717;
+  height: 60vh;
+  background: #1F2544;
   transition: 1s ease-in-out;
   clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
   border-top-right-radius: 20px;
@@ -48,7 +45,7 @@ body {
 
 .card span {
   font-weight: bold;
-  color: white;
+  color: #81689D;
   text-align: center;
   display: block;
   font-size: 1em;
@@ -56,18 +53,19 @@ body {
 
 .card .info {
   font-weight: 400;
-  color: white;
+  color: #81689D;
   display: block;
   text-align: center;
-  font-size: 0.92em;
+  font-size: 0.98em;
   margin: 1em;
 }
 
 .card .img {
-  width: 10em;
-  height: 14em;
+  margin-top: 25px;
+  width: 15em;
+  height: 16em;
   background: white;
-  border-radius: 15px;
+  border-radius: 8px;
   margin: auto;
   background-image: url(Wellington.jpg);
   background-position: center;
@@ -82,13 +80,14 @@ body {
 }
 
 .card a {
-  color: white;
+  color: #81689D;
   transition: .4s ease-in-out;
 }
 
 .card a:hover {
   color: red;
 }
+
 
 .card button {
   padding: 0.8em 1.7em;
@@ -117,26 +116,44 @@ body {
 }
 
 .caixa {
+  font-weight: 400;
   width: 32vw;
   height: auto;
-  background-color: #F1F1F1;
+  background-color: #1F2544;
   text-align: justify;
   padding: 0.8em 1.7em;
   margin-top: 0%;
   border-radius: 16px;
+  color: #81689D;
 
 }
 
 footer {
-  background-color: #F1F1F1;
+  background-color: #1F2544;
   border-bottom: 2px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  position: relative;
   width: 100%;
+  color: #81689D;
+}
+
+#meus-projetos{
+  font-size: 40px;
+  display: flex;
+  margin-top: 4%;
+  margin-left: 43%;
+  font-weight: bold;
+  color: #1F2544;
+  
+
+}
+
+.projetos{
+  display: flex;
+  justify-content: space-evenly;
+
 }
 
 @media only screen and (max-width: 1440px) {
@@ -181,6 +198,34 @@ footer {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .caixa {
+      width: auto;
+      height: auto;
+  }
+
+  .card {
+      width: auto;
+      height: auto;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  .projetos{
+    display: block;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   #navbar{
     width: auto;
@@ -204,5 +249,13 @@ footer {
 
   footer {
     position: relative;
+  }
+
+  .projetos{
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
   }
 }
